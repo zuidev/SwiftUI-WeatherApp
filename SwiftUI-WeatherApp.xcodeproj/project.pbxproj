@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0310572DFF0E940047EF10 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0310562DFF0E940047EF10 /* WeatherButton.swift */; };
 		0D6D8BB42DFDBB9900A7EFD4 /* SwiftUI_WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D8BB32DFDBB9900A7EFD4 /* SwiftUI_WeatherAppApp.swift */; };
 		0D6D8BB62DFDBB9900A7EFD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D8BB52DFDBB9900A7EFD4 /* ContentView.swift */; };
 		0D6D8BB82DFDBB9A00A7EFD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D8BB72DFDBB9A00A7EFD4 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0310562DFF0E940047EF10 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		0D6D8BB02DFDBB9900A7EFD4 /* SwiftUI-WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-WeatherApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6D8BB32DFDBB9900A7EFD4 /* SwiftUI_WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WeatherAppApp.swift; sourceTree = "<group>"; };
 		0D6D8BB52DFDBB9900A7EFD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				0D6D8BB52DFDBB9900A7EFD4 /* ContentView.swift */,
 				0D6D8BB72DFDBB9A00A7EFD4 /* Assets.xcassets */,
 				0D6D8BB92DFDBB9A00A7EFD4 /* Preview Content */,
+				0D0310562DFF0E940047EF10 /* WeatherButton.swift */,
 			);
 			path = "SwiftUI-WeatherApp";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				0D6D8BB62DFDBB9900A7EFD4 /* ContentView.swift in Sources */,
 				0D6D8BB42DFDBB9900A7EFD4 /* SwiftUI_WeatherAppApp.swift in Sources */,
+				0D0310572DFF0E940047EF10 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
