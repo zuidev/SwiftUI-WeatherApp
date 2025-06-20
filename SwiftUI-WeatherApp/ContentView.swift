@@ -51,8 +51,8 @@ struct ContentView: View {
                     isNightMode.toggle()
                 } label: {
                     WeatherButton(title: "Change Day Time",
-                                  textColor: .blue,
-                                  bgColor: .white)
+                                  textColor: .white,
+                                  bgColor: .cyan)
                 }
                
                 Spacer()
@@ -81,8 +81,10 @@ struct WeatherDayView: View {
                 .foregroundColor(.white)
             
             Image(systemName: imageName)
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
+//                .foregroundColor(.pink)
+//                .foregroundStyle(.pink, .orange, .blue) //iOS > 15, go with ".palette" mode
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40, alignment: .center)
             
@@ -98,11 +100,16 @@ struct BackgroudView: View {
     @Binding var isNightMode: Bool
     
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [isNightMode ? .black : .blue,
-                                                   isNightMode ? .gray : Color("lightBlue")]),
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-        .ignoresSafeArea()
+//        LinearGradient(gradient: Gradient(colors: [isNightMode ? .black : .blue,
+//                                                   isNightMode ? .gray : Color("lightBlue")]),
+//                       startPoint: .topLeading,
+//                       endPoint: .bottomTrailing)
+//        .ignoresSafeArea()
+        
+        ContainerRelativeShape()
+            .fill(isNightMode ? Color.black.gradient : Color.blue.gradient)
+            .ignoresSafeArea()
+        
     }
 }
 

@@ -17,8 +17,16 @@ struct WeatherButton:View {
         Text(title)
             .frame(width: 250, height: 50, alignment: .center)
             .font(.system(size: 20, weight: .bold))
-            .background(bgColor)
+            .background(bgColor.gradient)
             .foregroundColor(textColor)
             .cornerRadius(10)
+    }
+}
+
+struct WeatherButton_Previews: PreviewProvider {
+    static var previews: some View {
+        WeatherButton(title: "Test label",
+                      textColor: .white,
+                      bgColor: .cyan)
     }
 }
